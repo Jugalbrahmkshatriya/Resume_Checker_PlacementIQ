@@ -1,0 +1,52 @@
+/* Hide empty sidebar block (Streamlit bug/feature) */
+[data-testid="stSidebarUserContent"] > div:empty {
+    display: none !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/* General App Styling */
+[data-testid="stAppViewContainer"] {
+    background-color: #f5f6fa;
+}
+
+/* Main Content Block Styling */
+[data-testid="stVerticalBlock"] {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Text Styling - Use a professional font */
+h1, h2, h3, p, label, .main-content-text, .stButton button, .stDataFrame, .stTable, .stMarkdown, .stTextInput, .stSelectbox, .stSidebar, .stHeader, .stSubheader {
+    color: #222831 !important;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif !important;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+/* Custom class for main content text to ensure visibility in both themes */
+.main-content-text {
+    color: #222831 !important;
+    background: rgba(255,255,255,0.7);
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+/* Button Styling */
+.stButton button {
+    background-color: #00bf72;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.stButton button:hover {
+    background-color: #00a8d7;
+}
